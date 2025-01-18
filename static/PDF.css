@@ -1,0 +1,139 @@
+/* PDF.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+}
+
+#pdf-form {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#pdf-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #666;
+}
+
+#pdf-form input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#pdf-form button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#pdf-form button[type="submit"]:hover {
+    background-color: #3e8e41;
+}
+
+#loading {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #666;
+}
+
+#summary-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#summary-text {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+/* Responsive design */
+
+@media (max-width: 768px) {
+    #pdf-form {
+        margin: 20px auto;
+    }
+
+    #summary-container {
+        margin: 20px auto;
+    }
+}
+
+@media (max-width: 480px) {
+    #pdf-form {
+        margin: 10px auto;
+    }
+
+    #summary-container {
+        margin: 10px auto;
+    }
+
+    #pdf-form input[type="file"] {
+        padding: 5px;
+    }
+
+    #pdf-form button[type="submit"] {
+        padding: 5px;
+    }
+}
+
+/* Add some animations */
+
+#pdf-form button[type="submit"] {
+    transition: background-color 0.3s ease-in-out;
+}
+
+#pdf-form button[type="submit"]:hover {
+    transition: background-color 0.3s ease-in-out;
+}
+
+#loading {
+    animation: loading 2s infinite;
+}
+
+@keyframes loading {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}

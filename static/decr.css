@@ -1,0 +1,142 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: aquamarine;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+header {
+    background-color: wheat;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 5);
+    margin-bottom: 20px;
+}
+h1 {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+p {
+    margin-top: 20px;
+}
+/* Custom styles for your To-Do List and Pomodoro Timer */
+#timer {
+    font-size: 2em;
+    margin: 20px;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 4px blue;
+    background-color: black;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 5);
+    top: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 4px blue;
+    background-color: rebeccapurple;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 5);
+}
+#timer button {
+    margin: 0 10px;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+#timer button:hover {
+    background-color: #207572;
+}
+#timer button:active {
+    background-color: gray;
+}
+#timer button:focus {
+    outline: none;
+}
+#timer button:disabled {
+    background-color: gray;
+    cursor: not-allowed;
+}
+#timer button:disabled:hover {
+    background-color: rgb(223, 123, 123);
+}
+#timer button:disabled:active {
+    background-color: rgb(31, 38, 112);
+}
+#timer button:disabled:focus {
+    outline: none;
+}
+#timer h3 {
+    margin: 0;
+    padding: 0;
+}
+#to-do-list {
+    list-style-type: none;
+    padding: 0;
+}
+#to-do-list li {
+    margin-bottom: 10px;
+}
+
+.decr {
+    color: red;
+}
+
+.incr {
+    color: green;
+}

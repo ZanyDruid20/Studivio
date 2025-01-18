@@ -1,0 +1,96 @@
+/* static/tasks.css */
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* General Stylings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Body Stylings */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(21, 13, 21);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Container Stylings */
+.container {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    max-width: 80%; /* Change max-width to a percentage for wider display */
+}
+
+/* Header Styling */
+h1, h2 {
+    text-align: center;
+    color: wheat;
+    font-weight: 500; /* Medium weight for headers */
+}
+
+/* Label Styling */
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600; /* Semi-bold weight for labels */
+}
+
+/* Input and Textarea Styling */
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Button Styling */
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: whitesmoke;
+    color: purple;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #d1d1e0;
+}
+
+/* Task List Container Styling */
+#taskListContainer {
+    margin-top: 20px;
+}
+
+/* Responsive Styling */
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;
+        width: 100%; /* Full width on small screens */
+        max-width: 100%; /* Ensure the container uses the full available width */
+    }
+
+    input, button {
+        font-size: 14px; /* Adjust font size for smaller screens */
+    }
+}
+

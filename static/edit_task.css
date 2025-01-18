@@ -1,0 +1,142 @@
+/* General Styling */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1d0c16;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+/* Form Header */
+header {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.message {
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 5px;
+    display: block;
+}
+
+/* Labels and Inputs */
+label {
+    display: block;
+    margin-bottom: 15px;
+}
+
+label span {
+    display: block;
+    font-weight: bold;
+    font-size: 1rem;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+textarea.input {
+    resize: vertical;
+    min-height: 80px;
+}
+
+select.input {
+    background-color: #fff;
+    cursor: pointer;
+}
+
+/* Fieldset Styling */
+fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+label.sm {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Button Styling */
+.submitCard {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.submitCard button,
+.submitCard .btn-secondary {
+    display: inline-block;
+    padding: 10px 15px;
+    font-size: 1rem;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+.submitCard button {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.submitCard .btn-secondary {
+    background-color: #6c757d;
+    color: #fff;
+    text-decoration: none;
+}
+
+.submitCard button:hover {
+    background-color: #0056b3;
+}
+
+.submitCard .btn-secondary:hover {
+    background-color: #5a6268;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+        max-width: 90%;
+    }
+
+    header {
+        font-size: 1.2rem;
+    }
+
+    .input {
+        font-size: 0.9rem;
+    }
+
+    .submitCard button,
+    .submitCard .btn-secondary {
+        font-size: 0.9rem;
+        padding: 8px 10px;
+    }
+}
