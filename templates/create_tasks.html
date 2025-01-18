@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Tasks</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='Tasks.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Create Tasks</h1>
+        <form id="taskCreationForm" method="POST" action="/create_tasks">
+            <!-- Task Count -->
+            <label for="taskCount">Number of Tasks:</label>
+    
+            <input type="number" id="taskCount" name="taskCount" min="1" max="10" required>
+
+            <!-- Task Duration -->
+            <label for="taskDuration">Min Minutes: 30 - Max Minutes: 720</label>
+            <input type="number" id="taskDuration" name="taskDuration" min="30" max="720" required>
+
+            <!-- Generate Button -->
+            <button type="button" id="generateButton" onclick="generateTasks()">Generate Tasks</button>
+
+            <!-- Task Fields -->
+            <div id="taskFieldsContainer"></div>
+
+            <!-- Submit Button -->
+            <button type="submit" id="submitTasksButton" style="display: none;">Submit Tasks</button>
+        </form>
+    </div>
+
+    <script>
+        function generateTasks() {
+            const taskCount = document.getElementById('taskCount').value;
+            const taskDuration = document.getElementById('taskDuration').value;
+
+            if (!taskCount || !taskDuration) {
+                alert('Please enter both the number of tasks and the total duration.');
+                return;
+            }
+
+            const timePerTask = Math.floor(taskDuration / taskCount);
+            const container = document.getElementById('taskFieldsContainer');
+            container.innerHTML = ''; // Clear previous tasks
+
+            for (let i = 1; i <= taskCount; i++) {
+                const taskHTML = `
+                    <div class="task">
+                        <label for="task_name_${i}">Task ${i} Name:</label>
+                        <input type="text" id="task_name_${i}" name="task_name_${i}" required>
+
+                        <label for="task_desc_${i}">Task ${i} Description:</label>
+                        <input type="text" id="task_desc_${i}" name="task_desc_${i}" required>
+
+                        <label for="task_priority_${i}">Task ${i} Priority:</label>
+                        <select id="task_priority_${i}" name="task_priority_${i}" required>
+                            <option value="Low">Low</option>
+                            <option value="Medium">Medium</option>
+                            <option value="High">High</option>
+                        </select>
+
+                        <input type="hidden" id="task_time_${i}" name="task_time_${i}" value="${timePerTask}">
+                    </div>
+                `;
+                container.innerHTML += taskHTML;
+            }
+
+            document.getElementById('submitTasksButton').style.display = 'block';
+        }
+        generateTasks(); // Generate tasks on page load
+    </script>
+</body>
+</html>

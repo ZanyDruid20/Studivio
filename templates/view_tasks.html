@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Tasks</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="{{ url_for('static', filename='view.css') }}">
+    <style>
+        /* Optional CSS for transition effect */
+        .task-form {
+            display: none;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+        }
+        .task-form.show {
+            display: block;
+            opacity: 1;
+        }
+
+        /* Position the 'Add New Task' button at the bottom left */
+        #add-task-btn {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            z-index: 1000; /* Ensure it's above other content */
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="bg-primary text-white text-center py-3">
+        <h1>Your Task Manager</h1>
+        <p class="lead">Organize, track, and manage your tasks with ease.</p>
+    </header>
+
+    <main class="container my-4">
+        <!-- AI Features Section -->
+        <section class="mb-4">
+            <h2 class="text-secondary">AI Features</h2>
+            <ul class="list-unstyled">
+                <li><a href="{{ url_for('summarize_pdf_route') }}" class="d-flex align-items-center"><i class="bx bxs-file-pdf"></i> PDF Summarizer</a></li>
+            </ul>
+        </section>
+
+        <!-- Tasks Section -->
+        <section class="mb-4">
+            <h2 class="text-secondary">Things to Do</h2>
+            <div class="task-list">
+                {% for task in tasks %}
+                <div class="task-item border p-3 mb-3">
+                    <h3 class="task-title">{{ task['title'] }}</h3>
+                    <p class="task-description">{{ task['description'] }}</p>
+                    <p class="task-time">Time: {{ task['time'] }} minutes</p>
+                    <p class="task-priority">Priority: {{ task['priority'] }}</p>
+                    <div>
+                        <!-- Edit Button -->
+                         <!-- Edit Button (using button instead of link) -->
+                        <form action="{{ url_for('edit_task', task_id=task['_id']|string) }}" method="GET" class="d-inline">
+                            <button type="submit" class="btn btn-warning btn-sm mr-2 text-white">Edit</button>
+                        </form>
+
+                        <!-- Delete Button -->
+                        <form action="/delete_task/{{ task._id }}" method="post" class="delete-form">
+                            <input type="hidden" name="_method" value="DELETE">
+                            <button type="submit" class="btn btn-danger btn-sm">Delete</button>
+                        </form>
+                    </div>
+                </div>
+                {% else %}
+                <p>No tasks available.</p>
+                {% endfor %}
+            </div>
+        </section>
+
+        <!-- Pomodoro Timer Section -->
+        <section>
+            <h2 class="text-secondary">Pomodoro Timer</h2>
+            <div class="text-center">
+                <p id="timer" class="display-4 text-primary">25:00</p>
+                <div>
+                    <button id="start-btn" class="btn btn-success btn-sm mx-2">Start</button>
+                    <button id="pause-btn" class="btn btn-secondary btn-sm mx-2">Pause</button>
+                    <button id="reset-btn" class="btn btn-danger btn-sm mx-2">Reset</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-3">
+        &copy; 2025 Taskii. All Rights Reserved.
+    </footer>
+
+    <!-- JavaScript -->
+    
+    <script src="{{ url_for('static', filename='view.js') }}"></script>
+    <script>
+        const timerElement = document.getElementById('timer');
+        const startButton = document.getElementById('start-btn');
+        const pauseButton = document.getElementById('pause-btn');
+        const resetButton = document.getElementById('reset-btn');
+
+        let timerInterval;
+        let isRunning = false;
+        let timeRemaining = 25 * 60; // 25 minutes in seconds
+
+        function formatTime(seconds) {
+            const minutes = Math.floor(seconds / 60);
+            const remainingSeconds = seconds % 60;
+            return `${minutes < 10 ? '0' : ''}${minutes}:${remainingSeconds < 10 ? '0' : ''}${remainingSeconds}`;
+        }
+
+        function updateTimerDisplay() {
+            timerElement.textContent = formatTime(timeRemaining);
+        }
+
+        function startTimer() {
+            if (!isRunning) {
+                timerInterval = setInterval(() => {
+                    if (timeRemaining > 0) {
+                        timeRemaining--;
+                        updateTimerDisplay();
+                    } else {
+                        clearInterval(timerInterval);
+                        alert("Time's up! Take a break.");
+                        timeRemaining = 5 * 60; // Break time
+                        updateTimerDisplay();
+                    }
+                }, 1000);
+                isRunning = true;
+            }
+        }
+
+        function pauseTimer() {
+            clearInterval(timerInterval);
+            isRunning = false;
+        }
+
+        function resetTimer() {
+            clearInterval(timerInterval);
+            timeRemaining = 25 * 60;
+            updateTimerDisplay();
+            isRunning = false;
+        }
+
+        startButton.addEventListener('click', startTimer);
+        pauseButton.addEventListener('click', pauseTimer);
+        resetButton.addEventListener('click', resetTimer);
+
+        updateTimerDisplay();
+
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
