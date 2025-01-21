@@ -36,11 +36,11 @@ The primary goal of Taskii is to offer a clean, user-friendly experience that fo
 Taskii is constantly evolving! Here are some features planned for future development:
 - **Collaborative Tools**: Shared task lists and real-time updates for teams.
 - **Task Automation**: AI-based prioritization and recommendations.
-- **Enhanced Analytics**: Track your productivity and get detailed insights.
-- **Advanced Integrations**: Add features like calendar sync and reminders.
-- **YouTube Summarization**: Summarize educational or task-related videos for quick insights.
-- **Flashcard Generation**: Automatically generate flashcards from user-provided content to aid studying.
-- **Advanced UI**: A responsive design using React with modern UI components, smooth animations, real-time collaboration, personalized user preferences, and interactive task management features to enhance user experience and productivity.
+- **Enhanced Analytics**: Developing features to track productivity and provide detailed insights.
+- **Advanced Integrations**: Adding features like calendar sync and reminders..
+- **YouTube Summarization**: Implementing AI to extract YouTube audio and summarize educational or task-related videos for quick insights.
+- **Flashcard Generation**: Automatically generating flashcards from user-provided content to aid studying.
+- **Advanced UI**:  Creating a responsive design using React with modern UI components, smooth animations, real-time collaboration, personalized user preferences, and interactive task management features to enhance user experience and productivity.
 
 ---
 
