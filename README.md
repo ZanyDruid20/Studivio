@@ -46,7 +46,7 @@ Taskii is constantly evolving! Here are some features planned for future develop
 
 ## Contact
 If you have any questions, feedback, or ideas, feel free to reach out!
-- Email: furnomd1@umbc.edu
+- Email: jlc10291@gmail.com
 - GitHub Issues: [Taskii Repository](https://github.com/your-username/taskii/issues)
 
 
