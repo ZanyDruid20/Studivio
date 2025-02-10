@@ -28,6 +28,7 @@ The primary goal of Taskii is to offer a clean, user-friendly experience that fo
 - **Task Management**: Create, edit, and delete tasks with ease.
 - **User-Friendly Interface**: Intuitive design to keep everything accessible and simple.
 - **Lightweight Backend**: Powered by Flask for fast and efficient task handling.
+- **PDF Summarization**: Using Tensorflow and Huggingface to summarize PDF documents
 - **Secure Storage**: Tasks are stored securely using MongoDB.
 
 ---
