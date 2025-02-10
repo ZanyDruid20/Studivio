@@ -11,6 +11,7 @@ Welcome to the **Taskii** project documentation! Taskii is a task management and
 
 ## Table of Contents
 - [Introduction](#introduction)
+- [Technology Used](#Technology Used)
 - [Features](#features)
 - [Future Plans](#future-plans)
 - [Contact](#contact)
@@ -23,12 +24,17 @@ Taskii is a tool designed to help users effectively manage their tasks and boost
 The primary goal of Taskii is to offer a clean, user-friendly experience that focuses on simplicity and practicality. Built with **Flask** for the backend and **vanilla JavaScript, HTML, and CSS** for the frontend, Taskii emphasizes reliability and ease of use.
 
 ---
-
+## Technology Ueed
+- **Backend**: Flask
+- **Frontend**: Vanilla JavaScript, HTML, CSS (future upgrade to React)
+- **AI/ML**: TensorFlow, Hugging Face
+- **Database**: MongoDB
+---
 ## Features
 - **Task Management**: Create, edit, and delete tasks with ease.
 - **User-Friendly Interface**: Intuitive design to keep everything accessible and simple.
 - **Lightweight Backend**: Powered by Flask for fast and efficient task handling.
-- **PDF Summarization**: Using Tensorflow and Huggingface to summarize PDF documents
+- **PDF Summarization**: Use AI-powered TensorFlow and Hugging Face to quickly summarize PDF documents, saving time and providing key insights at a glance.
 - **Secure Storage**: Tasks are stored securely using MongoDB.
 
 ---
