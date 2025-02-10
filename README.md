@@ -11,7 +11,7 @@ Welcome to the **Taskii** project documentation! Taskii is a task management and
 
 ## Table of Contents
 - [Introduction](#introduction)
-- [Technology Used](#Technology Used)
+- [Technologies Used](#technologies-used)
 - [Features](#features)
 - [Future Plans](#future-plans)
 - [Contact](#contact)
