@@ -24,7 +24,7 @@ Taskii is a tool designed to help users effectively manage their tasks and boost
 The primary goal of Taskii is to offer a clean, user-friendly experience that focuses on simplicity and practicality. Built with **Flask** for the backend and **vanilla JavaScript, HTML, and CSS** for the frontend, Taskii emphasizes reliability and ease of use.
 
 ---
-## Technology Ueed
+## Technologies Ueed
 - **Backend**: Flask
 - **Frontend**: Vanilla JavaScript, HTML, CSS (future upgrade to React)
 - **AI/ML**: TensorFlow, Hugging Face
