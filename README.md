@@ -49,7 +49,7 @@ Studivio combines traditional note-taking with AI-powered content processing to 
 - **Backend:** Flask, Python, JWT Authentication  
 - **Database:** MongoDB
 - **AI Services:** OpenAI Whisper, GPT, AssemblyAI APIs
-- **File Processing:** PDF extraction, audio transcription
+- **File Processing:** PDF extrtaction, audio transcription
 - **UI/UX Design:** Figma, Dribble
 
 ## 📸 Screenshots
@@ -69,9 +69,10 @@ Studivio combines traditional note-taking with AI-powered content processing to 
 </div>
 
 ## 🎬 Demo Videos
-https://github.com/user-attachments/assets/dde33d26-7807-45c7-bd78-c1f96f79a6cb
-https://github.com/user-attachments/assets/cea768cc-0895-46d8-9f6d-441a5b90a3d4
-https://github.com/user-attachments/assets/7b564362-34b6-4107-8e48-5e1790ebe688
+
+- https://github.com/user-attachments/assets/dde33d26-7807-45c7-bd78-c1f96f79a6cb
+- https://github.com/user-attachments/assets/cea768cc-0895-46d8-9f6d-441a5b90a3d4
+- https://github.com/user-attachments/assets/7b564362-34b6-4107-8e48-5e1790ebe688
 
 ##  Acknowledgements
 AI-assisted debugging and logic with Github Copilot
