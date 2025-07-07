@@ -81,3 +81,5 @@ AI-assisted debugging and logic with Github Copilot
 > **Note:** Studivio is currently in active development as a prototype. Features and functionality are being continuously improved.
 > **Privacy:** All user data (notes, audio, PDFs) is handled for demonstration and testing purposes only and may be processed by trusted AI services (OpenAI, AssemblyAI). Please do not upload sensitive or confidential information.
 
+
+
