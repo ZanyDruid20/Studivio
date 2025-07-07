@@ -55,24 +55,24 @@ Studivio combines traditional note-taking with AI-powered content processing to 
 ## 📸 Screenshots
 
 <div align="center">
-  <img src="image.png" alt="Dashboard" width="400"/>
-  <img src="image-1.png" alt="Note List" width="400"/>
-  <img src="image-2.png" alt="Note View" width="400"/>
-  <img src="image-3.png" alt="Task Management" width="400"/>
-  <img src="image-4.png" alt="PDF Upload" width="400"/>
-  <img src="image-5.png" alt="Voice Note" width="400"/>
-  <img src="image-6.png" alt="Search" width="400"/>
-  <img src="image-7.png" alt="Authentication" width="400"/>
-  <img src="image-8.png" alt="Sidebar" width="400"/>
-  <img src="image-9.png" alt="Settings" width="400"/>
-  <img src="image-10.png" alt="Mobile View" width="400"/>
+  <img src="new_media/image.png" alt="Dashboard" width="400"/>
+  <img src="new_media/image-1.png" alt="Note List" width="400"/>
+  <img src="new_media/image-2.png" alt="Note View" width="400"/>
+  <img src="new_media/image-3.png" alt="Task Management" width="400"/>
+  <img src="new_media/image-4.png" alt="PDF Upload" width="400"/>
+  <img src="new_media/image-5.png" alt="Voice Note" width="400"/>
+  <img src="new_media/image-6.png" alt="Search" width="400"/>
+  <img src="new_media/image-7.png" alt="Authentication" width="400"/>
+  <img src="new_media/image-8.png" alt="Sidebar" width="400"/>
+  <img src="new_media/image-9.png" alt="Settings" width="400"/>
+  <img src="new_media/image-10.png" alt="Mobile View" width="400"/>
 </div>
 
 ## 🎬 Demo Videos
 
 <div align="center">
-  <video controls src="20250707-1720-23.9336830.mp4" title="Studivio Demo 1" width="400"></video>
-  <video controls src="20250707-1724-10.4839585.mp4" title="Studivio Demo 2" width="400"></video>
+  <video controls src="new_media/20250707-1720-23.9336830.mp4" title="Studivio Demo 1" width="400"></video>
+  <video controls src="new_media/20250707-1724-10.4839585.mp4" title="Studivio Demo 2" width="400"></video>
 </div>
 
 ##  Acknowledgements
