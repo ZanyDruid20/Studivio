@@ -68,12 +68,6 @@ Studivio combines traditional note-taking with AI-powered content processing to 
   <img src="new_media/image-10.png" alt="Mobile View" width="400"/>
 </div>
 
-## 🎬 Demo Videos
-
-- https://github.com/user-attachments/assets/dde33d26-7807-45c7-bd78-c1f96f79a6cb
-- https://github.com/user-attachments/assets/cea768cc-0895-46d8-9f6d-441a5b90a3d4
-- https://github.com/user-attachments/assets/7b564362-34b6-4107-8e48-5e1790ebe688
-
 ##  Acknowledgements
 AI-assisted debugging and logic with Github Copilot
 
