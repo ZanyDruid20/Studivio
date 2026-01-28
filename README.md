@@ -69,7 +69,6 @@ Studivio combines traditional note-taking with AI-powered content processing to 
 </div>
 
 ## 🎬 Demo Videos
-
 <div align="center">
   <video controls src="new_media/20250707-1720-23.9336830.mp4" title="Studivio Demo 1" width="400"></video>
   <video controls src="new_media/20250707-1724-10.4839585.mp4" title="Studivio Demo 2" width="400"></video>
