@@ -52,6 +52,8 @@ Studivio combines traditional note-taking with AI-powered content processing to 
 - **File Processing:** PDF extraction, audio transcription
 - **UI/UX Design:** Figma, Dribbble
 
+## Technical Challenges & Tradeoffs
+- The main challenges in this project were frontend–backend integration, long-running AI workflows, and production visibility. I resolved CORS, JWT authentication, and error-handling issues by standardizing API configuration with Flask-CORS and consistent auth patterns. To handle 10–30 second AI processing without freezing the UI, I introduced async workflows with loading states and error boundaries, and added Prometheus metrics via Flask middleware to monitor latency and failures. I also fixed structural issues like circular imports and async rendering bugs by reorganizing modules and properly managing data loading in React.
 ## 📸 Screenshots
 
 <div align="center">
