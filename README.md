@@ -49,8 +49,8 @@ Studivio combines traditional note-taking with AI-powered content processing to 
 - **Backend:** Flask, Python, JWT Authentication  
 - **Database:** MongoDB
 - **AI Services:** OpenAI Whisper, GPT, AssemblyAI APIs
-- **File Processing:** PDF extrtaction, audio transcription
-- **UI/UX Design:** Figma, Dribble
+- **File Processing:** PDF extraction, audio transcription
+- **UI/UX Design:** Figma, Dribbble
 
 ## 📸 Screenshots
 
